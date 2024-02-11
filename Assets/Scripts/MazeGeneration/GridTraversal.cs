@@ -31,41 +31,36 @@ namespace ShareefSoftware
          */
         public IEnumerable<((int Row, int Column) From, (int Row, int Column) To)> GenerateMaze(int startRow, int startColumn)
         {
-            /*
-             * Implement your maze generation algorithm here
-             * Use helper methods as needed
-             */
             visited = new bool[grid.NumberOfRows, grid.NumberOfColumns];
-            var frontierCells = new List<(int Row, int Column)>();
-            frontierCells.Add((startRow, startColumn));
+            return PrimsTraverse((startRow, startColumn));
+            
+        }
 
-            if (frontierCells.Count > 0)
+        private IEnumerable<((int Row, int Column) From, (int Row, int Column) To)> PrimsTraverse((int Row, int Column) cell)
+        {
+            var nextStepNominees = new List<(int Row, int Column)>();
+            if (!visited[cell.Row, cell.Column])
             {
-                var randomIndex = new Random().Next(frontierCells.Count);
-                var currentCell = frontierCells[randomIndex];
-                frontierCells.RemoveAt(randomIndex);
-                frontierCells.Distinct();
-
-                if (!visited[currentCell.Row, currentCell.Column])
+                visited[cell.Row, cell.Column] = true;
+                foreach (var neighbor in grid.Neighbors(cell.Row, cell.Column))
                 {
-                    visited[currentCell.Row, currentCell.Column] = true;
-
-                    var neighbors = grid.Neighbors(currentCell.Row, currentCell.Column);
-
-                    // Shuffle the neighbors to introduce randomness
-                    //var shuffledNeighbors = neighbors.OrderBy(_ => Guid.NewGuid());
-
-                    foreach (var neighbor in neighbors)
+                    if (!visited[neighbor.Row, neighbor.Column])
                     {
-                        if (!visited[neighbor.Row, neighbor.Column])
-                        {
-                            frontierCells.Add(neighbor);
-
-                            yield return ((currentCell.Row, currentCell.Column), neighbor);
-                        }
+                        nextStepNominees.Add(neighbor);
                     }
+                }
+                var random = new Random();
+
+                while (nextStepNominees.Count > 0)
+                {
+                    int rndIndex = random.Next(nextStepNominees.Count);
+                    var next = nextStepNominees[rndIndex];
+                    nextStepNominees.Remove(next);
+
+                    yield return ((cell.Row, cell.Column), next);
                 }
             }
         }
+
     }
 }
