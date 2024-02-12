@@ -1,0 +1,34 @@
+{
+    "name": "RotationControl",
+    "maps": [
+        {
+            "name": "SceneRotation",
+            "id": "77c659d8-3a02-46f4-92bb-2d45172d0def",
+            "actions": [
+                {
+                    "name": "Rotation",
+                    "type": "Button",
+                    "id": "2a7b56de-8fdc-4a1c-9b0b-3e8311304fa8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "632d8d0e-b6d4-4bcc-b003-c53e8fe90791",
+                    "path": "<Keyboard>/0",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

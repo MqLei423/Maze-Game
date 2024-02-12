@@ -1,6 +1,4 @@
-﻿using System.Linq;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 
 namespace ShareefSoftware
 {
@@ -10,11 +8,6 @@ namespace ShareefSoftware
 
         private readonly IGridGraph<T> grid;
 
-        /*
-         * Replace this with your documentation
-         * 
-         * Define your instance variables here
-         */
         private bool[,] visited;
         private readonly System.Random random;
         private List<(int Row, int Column)> cellsVisited;
@@ -28,10 +21,8 @@ namespace ShareefSoftware
         }
 
         /*
-         * Replace this with your documentation
-         * 
-         * DO NOT change the method signature
-         * Define helper methods as 'private'
+         * Prim's algorithm is implemented to traverse the grid. Rather than doing it iteratively, the algorithm is
+         * implemented in a recursive manner, in which it goes on and handle the next vertex by calling itself.
          */
         public IEnumerable<((int Row, int Column) From, (int Row, int Column) To)> GenerateMaze(int startRow, int startColumn)
         {
@@ -43,13 +34,13 @@ namespace ShareefSoftware
         private IEnumerable<((int Row, int Column) From, (int Row, int Column) To)> PrimsEdgeSelect((int Row, int Column) cell)
         {
             var vertexNominees = new List<(int Row, int Column)>();
-            var allNominees = new List<(int Row, int Column)>();
+            var allNominees = new List<(int Row, int Column)>(); // This contains neighbor vertices on the other side of the cut
 
             if (!visited[cell.Row, cell.Column])
             {
+                // Mark current cell as visited, then identify the cut.
                 visited[cell.Row, cell.Column] = true;
                 cellsVisited.Add((cell.Row, cell.Column));
-                Debug.Log("Row " + cell.Row + " Column " + cell.Column);
 
                 foreach (var frontierCell in cellsVisited)
                 {
@@ -62,52 +53,44 @@ namespace ShareefSoftware
                 }
 
                 // Randomly select an edge on the cut
-                // Handle the situation when not encountering deadend
-                if (vertexNominees.Count > 0)
+                if (allNominees.Count > 0)
                 {
-                    int rndIndex = random.Next(vertexNominees.Count);
-                    var next = vertexNominees[rndIndex];
-                    
+                    // Select an edge randomly
+                    int rndIndex = random.Next(allNominees.Count);
+                    var next = allNominees[rndIndex];
+                    bool[,] copy = visited;
+
+                    // Find the visited vertex the edge extend from
+                    int splitingCellRow = -1;
+                    int splitingCellColumn = -1;
+                    foreach(var nextNeighbor in grid.Neighbors(next.Row, next.Column))
+                    {
+                        if (copy[nextNeighbor.Row, nextNeighbor.Column])
+                        {
+                            splitingCellRow = nextNeighbor.Row;
+                            splitingCellColumn = nextNeighbor.Column;
+                            break;
+                        }
+                    }
+
+                    //Continue on to next vertex
                     foreach (var edge in PrimsEdgeSelect(next))
                     {
                         yield return edge;
                     }
 
                     vertexNominees.Remove(next);
-                    //allNominees.Remove(next);
-                    yield return ((cell.Row, cell.Column), next);
-                    
-                }
-                else if (allNominees.Count > 0)
-                {
-                    int rndIndex = random.Next(allNominees.Count);
-                    var next = allNominees[rndIndex];
-
-                    foreach (var edge in PrimsEdgeSelect(next))
-                    {
-                        yield return edge;
-                    }
-
-                    //vertexNominees.Remove(next);
                     allNominees.Remove(next);
 
-                    int splitingCellIndex = 0;
-                    foreach(var nextNeighbor in grid.Neighbors(next.Row, next.Column))
-                    {
-                        for (int i = 0; i < cellsVisited.Count; i++)
-                        {
-                            if ((nextNeighbor.Row == cellsVisited[i].Row) && (nextNeighbor.Column == cellsVisited[i].Column))
-                            {
-                                splitingCellIndex = i;
-                            }
-                        }
-                    }
-
-                    yield return (cellsVisited[splitingCellIndex], next);
+                    yield return ((splitingCellRow, splitingCellColumn), next);
                 }
             }
         }
 
+        /*
+         * This method finds the part of cut around a given vertex,
+         * this part forms the complete cut with other seperated cuts.
+         */
         private List<(int Row, int Column)> createCutList((int Row, int Column) cell)
         {
             var nextStepNominees = new List<(int Row, int Column)>();
