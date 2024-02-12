@@ -63,14 +63,11 @@
     <Compile Include="Assets/Scripts/MazeGeneration/Maze.cs" />
     <Compile Include="Assets/Input/RotationControl.cs" />
     <Compile Include="Assets/AurynSky/Forest Pack/Scripts/ChestDemo.cs" />
-    <Compile Include="Assets/RotateZ.cs" />
-    <Compile Include="Assets/RotateY.cs" />
     <Compile Include="Assets/Scripts/MazeGeneration/StampSet.cs" />
     <Compile Include="Assets/Scripts/MazeGeneration/Direction.cs" />
     <Compile Include="Assets/Scripts/IGameObjectFactory.cs" />
     <Compile Include="Assets/Scripts/MazeGeneration/IGridGraph.cs" />
     <Compile Include="Assets/Scripts/LevelGeneration.cs" />
-    <Compile Include="Assets/HierarchicalTF.cs" />
     <Compile Include="Assets/Scripts/InputManager.cs" />
     <Compile Include="Assets/AurynSky/Forest Pack/Scripts/Rotator.cs" />
     <Compile Include="Assets/Scripts/MazeGeneration/GridGraphRandomizedNeighborsDecorator.cs" />
@@ -85,7 +82,6 @@
     <Compile Include="Assets/Scripts/MazeGeneration/GridUtility.cs" />
     <Compile Include="Assets/Scripts/MazeGeneration/GridGraph.cs" />
     <Compile Include="Assets/Scripts/GameObjectFactoryRandomFromList.cs" />
-    <Compile Include="Assets/RotateX.cs" />
     <Compile Include="Assets/Scripts/MazeGeneration/IGraphValueAccessor.cs" />
     <Compile Include="Assets/Scripts/MazeGeneration/GraphValueAccessorConstant.cs" />
     <Compile Include="Assets/Scripts/RotationHandler.cs" />
