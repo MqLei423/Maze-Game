@@ -7,7 +7,7 @@ namespace ShareefSoftware
     {
         [SerializeField] private float rotationSpeed; // Adjust the speed as needed
         private bool isRotating;
-        [SerializeField] GameObject maze;
+        [SerializeField] GameObject rotatedTarget;
         private Vector3 centerOfRotaion;
 
         void Start()
@@ -18,7 +18,20 @@ namespace ShareefSoftware
         public void ToggleRataion()
         {
             isRotating = !isRotating;
-            Debug.Log("Rotation Toggled");
+            centerOfRotaion = CalculateCenterPoint();
+        }
+
+        private Vector3 CalculateCenterPoint()
+        {
+            var rendererComponents = rotatedTarget.GetComponentsInChildren<Renderer>();
+            Bounds bounds = new Bounds(rotatedTarget.transform.position, Vector3.zero);
+
+            foreach (Renderer child in rendererComponents)
+            {
+                bounds.Encapsulate(child.bounds);
+            }
+
+            return bounds.center;
         }
 
         private void Update()
@@ -26,7 +39,7 @@ namespace ShareefSoftware
             // Rotate the entire scene around the y-axis if isRotating is true
             if (isRotating)
             {
-                maze.transform.Rotate(0, rotationSpeed, 0);
+                rotatedTarget.transform.RotateAround(centerOfRotaion, Vector3.up, rotationSpeed);
             }
         }
     }

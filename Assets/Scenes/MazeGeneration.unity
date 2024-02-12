@@ -370,7 +370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 0.1
-  maze: {fileID: 882375732}
+  rotatedTarget: {fileID: 882375732}
 --- !u!4 &1196836479
 Transform:
   m_ObjectHideFlags: 0
@@ -419,7 +419,7 @@ MonoBehaviour:
   numberOfRows: 10
   numberOfColumns: 20
   barrierPrefabs:
-  - {fileID: 3093966231757914467, guid: 243755bc501f4324b9be4238e15a9686, type: 3}
+  - {fileID: 3093966231757914467, guid: cb17b1537f25840d19672fa81ae3bc9d, type: 3}
   - {fileID: 3093966231757914467, guid: e3c48a62cdbbc4ffba930605c3707db2, type: 3}
   - {fileID: 3093966231757914467, guid: 255c95995ddce4f3886aa32432365ed5, type: 3}
   - {fileID: 3093966231757914467, guid: 74caeb005e2d444a58ecad8898b236d1, type: 3}
