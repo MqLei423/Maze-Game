@@ -5,9 +5,10 @@ namespace ShareefSoftware
 {
     public class SceneRotator : MonoBehaviour
     {
-        private float rotationSpeed = 5f; // Adjust the speed as needed
-        private InputAction rotateAction;
+        [SerializeField] private float rotationSpeed; // Adjust the speed as needed
         private bool isRotating;
+        [SerializeField] GameObject maze;
+        private Vector3 centerOfRotaion;
 
         void Start()
         {
@@ -25,7 +26,7 @@ namespace ShareefSoftware
             // Rotate the entire scene around the y-axis if isRotating is true
             if (isRotating)
             {
-                transform.Rotate(0, 5, 0);
+                maze.transform.Rotate(0, rotationSpeed, 0);
             }
         }
     }

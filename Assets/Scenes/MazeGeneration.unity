@@ -369,6 +369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19f998ee35c4b45bbb8395bdc45fb404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotationSpeed: 0.1
+  maze: {fileID: 882375732}
 --- !u!4 &1196836479
 Transform:
   m_ObjectHideFlags: 0
@@ -418,6 +420,9 @@ MonoBehaviour:
   numberOfColumns: 20
   barrierPrefabs:
   - {fileID: 3093966231757914467, guid: 243755bc501f4324b9be4238e15a9686, type: 3}
+  - {fileID: 3093966231757914467, guid: e3c48a62cdbbc4ffba930605c3707db2, type: 3}
+  - {fileID: 3093966231757914467, guid: 255c95995ddce4f3886aa32432365ed5, type: 3}
+  - {fileID: 3093966231757914467, guid: 74caeb005e2d444a58ecad8898b236d1, type: 3}
   pathPrefabs:
   - {fileID: 6869099080896954662, guid: 3a69e0e92dc07c0499883ea2e2a04ddd, type: 3}
   cellWidth: 4

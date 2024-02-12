@@ -1,0 +1,1722 @@
+Unity Editor version:    2022.3.17f1 (4fc78088f837)
+Branch:                  2022.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 13.2.1 (Build 22D68)
+Darwin version:          22.3.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/mengqilei/Desktop/Projects/CSE3541/CSE3541 Lab2
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58136
+Successfully changed project path to: /Users/mengqilei/Desktop/Projects/CSE3541/CSE3541 Lab2
+/Users/mengqilei/Desktop/Projects/CSE3541/CSE3541 Lab2
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8060715328] Host "[IP] 172.28.31.89 [Port] 0 [Flags] 2 [Guid] 1649840403 [EditorId] 1649840403 [Version] 1048832 [Id] OSXEditor(0,MengQis-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8060715328] Host "[IP] 172.28.31.89 [Port] 0 [Flags] 2 [Guid] 1649840403 [EditorId] 1649840403 [Version] 1048832 [Id] OSXEditor(0,MengQis-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 9 workers.
+Refreshing native plugins compatible for Editor in 1.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.17f1 (4fc78088f837)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/mengqilei/Desktop/Projects/CSE3541/CSE3541 Lab2/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M2 Pro (high power)
+Metal devices available: 1
+0: Apple M2 Pro (high power)
+Using device Apple M2 Pro (high power)
+Initializing Metal device caps: Apple M2 Pro
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56107
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.17f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001575 seconds.
+- Loaded All Assemblies, in  0.221 seconds
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.141 seconds
+Domain Reload Profiling: 362ms
+	BeginReloadAssembly (67ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (95ms)
+		LoadAssemblies (68ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (92ms)
+			TypeCache.Refresh (92ms)
+				TypeCache.ScanAssembly (82ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (141ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (107ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (75ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.345 seconds
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.298 seconds
+Domain Reload Profiling: 644ms
+	BeginReloadAssembly (65ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (235ms)
+		LoadAssemblies (159ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (105ms)
+			TypeCache.Refresh (96ms)
+				TypeCache.ScanAssembly (84ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (299ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (223ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (26ms)
+			ProcessInitializeOnLoadAttributes (184ms)
+			ProcessInitializeOnLoadMethodAttributes (9ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3493 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (51.9 KB). Loaded Objects now: 3955.
+Memory consumption went from 136.5 MB to 136.5 MB.
+Total: 2.350708 ms (FindLiveObjects: 0.092084 ms CreateObjectMapping: 0.055750 ms MarkObjects: 2.134500 ms  DeleteObjects: 0.068042 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1289154.979592 seconds.
+  path: Assets/Tale Monster Cube Env/Prefabs/Complex/Base_3.prefab
+  artifactKey: Guid(394840af8bfafcd40ab658ebd549b96d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tale Monster Cube Env/Prefabs/Complex/Base_3.prefab using Guid(394840af8bfafcd40ab658ebd549b96d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '376c56174b8c51fd7e267f56b208e9ac') in 0.050192 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Tale Monster Cube Env/Prefabs/Props/Barel.prefab
+  artifactKey: Guid(726a4d0555af6894e9984a16fd9efead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tale Monster Cube Env/Prefabs/Props/Barel.prefab using Guid(726a4d0555af6894e9984a16fd9efead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7a77193a87f3f6e5380f6fd65ec3d25') in 0.004177 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Tale Monster Cube Env/Prefabs/Complex/Base_2_tall.prefab
+  artifactKey: Guid(7f842a3a01eb62746818b5d6641622dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tale Monster Cube Env/Prefabs/Complex/Base_2_tall.prefab using Guid(7f842a3a01eb62746818b5d6641622dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eb7339b25486baec61778398e7d581a') in 0.005072 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Tale Monster Cube Env/Prefabs/Complex/Base_2.prefab
+  artifactKey: Guid(24a77ab73cfeaa54ba72daf6e1dd0f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tale Monster Cube Env/Prefabs/Complex/Base_2.prefab using Guid(24a77ab73cfeaa54ba72daf6e1dd0f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c0725a45ddc910886e19185c1269de8') in 0.005122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x295487000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.214 seconds
+Refreshing native plugins compatible for Editor in 1.68 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.359 seconds
+Domain Reload Profiling: 573ms
+	BeginReloadAssembly (76ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (98ms)
+		LoadAssemblies (115ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (359ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (208ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (27ms)
+			ProcessInitializeOnLoadAttributes (167ms)
+			ProcessInitializeOnLoadMethodAttributes (9ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3485 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (31.6 KB). Loaded Objects now: 3966.
+Memory consumption went from 145.2 MB to 145.2 MB.
+Total: 2.481875 ms (FindLiveObjects: 0.119541 ms CreateObjectMapping: 0.054250 ms MarkObjects: 2.268750 ms  DeleteObjects: 0.039000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x294c23000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.237 seconds
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.571 seconds
+Domain Reload Profiling: 808ms
+	BeginReloadAssembly (74ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (12ms)
+	LoadAllAssembliesAndSetupDomain (123ms)
+		LoadAssemblies (130ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (571ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (193ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (26ms)
+			ProcessInitializeOnLoadAttributes (155ms)
+			ProcessInitializeOnLoadMethodAttributes (8ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3486 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (31.6 KB). Loaded Objects now: 3969.
+Memory consumption went from 152.9 MB to 152.9 MB.
+Total: 2.255959 ms (FindLiveObjects: 0.098791 ms CreateObjectMapping: 0.048083 ms MarkObjects: 2.080375 ms  DeleteObjects: 0.028459 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x294c23000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.225 seconds
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.570 seconds
+Domain Reload Profiling: 795ms
+	BeginReloadAssembly (72ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (12ms)
+	LoadAllAssembliesAndSetupDomain (114ms)
+		LoadAssemblies (122ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (570ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (190ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (25ms)
+			ProcessInitializeOnLoadAttributes (153ms)
+			ProcessInitializeOnLoadMethodAttributes (8ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 1.04 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3486 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (31.6 KB). Loaded Objects now: 3972.
+Memory consumption went from 160.4 MB to 160.4 MB.
+Total: 2.138666 ms (FindLiveObjects: 0.100083 ms CreateObjectMapping: 0.051167 ms MarkObjects: 1.954791 ms  DeleteObjects: 0.032375 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16fc1f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.205 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.385 seconds
+Domain Reload Profiling: 590ms
+	BeginReloadAssembly (72ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (94ms)
+		LoadAssemblies (110ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (385ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (217ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (28ms)
+			ProcessInitializeOnLoadAttributes (175ms)
+			ProcessInitializeOnLoadMethodAttributes (9ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3486 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (31.6 KB). Loaded Objects now: 3975.
+Memory consumption went from 167.9 MB to 167.9 MB.
+Total: 2.190417 ms (FindLiveObjects: 0.112500 ms CreateObjectMapping: 0.054958 ms MarkObjects: 1.990792 ms  DeleteObjects: 0.031625 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16fc1f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.257 seconds
+Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.608 seconds
+Domain Reload Profiling: 865ms
+	BeginReloadAssembly (72ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (146ms)
+		LoadAssemblies (151ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (8ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (608ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (193ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (26ms)
+			ProcessInitializeOnLoadAttributes (154ms)
+			ProcessInitializeOnLoadMethodAttributes (8ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3486 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (31.7 KB). Loaded Objects now: 3978.
+Memory consumption went from 175.4 MB to 175.4 MB.
+Total: 2.090833 ms (FindLiveObjects: 0.108959 ms CreateObjectMapping: 0.051375 ms MarkObjects: 1.903375 ms  DeleteObjects: 0.026791 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 991.453433 seconds.
+  path: Assets/TileSets/BlocksBasic/ShorterWall.prefab
+  artifactKey: Guid(57588c280068a41c1947be1b15f1697a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/ShorterWall.prefab using Guid(57588c280068a41c1947be1b15f1697a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6d9f49a83642ddc30a1ec6466c606b4') in 0.014218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 44.308431 seconds.
+  path: Assets/TileSets/BlocksBasic/ShorterWall.prefab
+  artifactKey: Guid(57588c280068a41c1947be1b15f1697a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/ShorterWall.prefab using Guid(57588c280068a41c1947be1b15f1697a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3878b818321024769a5e2ecdb231290a') in 0.001256 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 20.088184 seconds.
+  path: Assets/TileSets/BlocksBasic/ShorterWall.prefab
+  artifactKey: Guid(57588c280068a41c1947be1b15f1697a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/ShorterWall.prefab using Guid(57588c280068a41c1947be1b15f1697a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd68111ad31dc92510306de6f2b99b47b') in 0.001043 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 175.148787 seconds.
+  path: Assets/TileSets/BlocksBasic/TallPlatform 1.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TallPlatform 1.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbf151a1c4ff9f2b1fbf154570a23755') in 0.085558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 268
+========================================================================
+Received Import Request.
+  Time since last request: 14.481963 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6691fe16726740a80bd9a81d0edd02a9') in 0.009575 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 268
+========================================================================
+Received Import Request.
+  Time since last request: 10.302897 seconds.
+  path: Assets/TileSets/BlocksBasic/TowerWall.prefab
+  artifactKey: Guid(243755bc501f4324b9be4238e15a9686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TowerWall.prefab using Guid(243755bc501f4324b9be4238e15a9686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '687030edc56dca4ddb9b9a1085b2bb00') in 0.009258 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 268
+========================================================================
+Received Import Request.
+  Time since last request: 60.023896 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e21edc77fd246dad1be96ee70d69ada5') in 0.010605 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 269
+========================================================================
+Received Import Request.
+  Time since last request: 6.833240 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ade7f996f044c2353e61f7ac33faf4a') in 0.009694 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 269
+========================================================================
+Received Import Request.
+  Time since last request: 13.597536 seconds.
+  path: Assets/TileSets/BlocksBasic/Water.prefab
+  artifactKey: Guid(3a69e0e92dc07c0499883ea2e2a04ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/Water.prefab using Guid(3a69e0e92dc07c0499883ea2e2a04ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ec1b152c3b3c9147f139d250de1a546') in 0.006455 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 13.662489 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29383678eb7d0981a5300c61681ed0f7') in 0.010211 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 269
+========================================================================
+Received Import Request.
+  Time since last request: 0.800569 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4adc833d48d3a6f5366e90f6caf18ece') in 0.009434 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 269
+========================================================================
+Received Import Request.
+  Time since last request: 1.401188 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8227082c95fe8dde338624456d77d85f') in 0.010351 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 269
+========================================================================
+Received Import Request.
+  Time since last request: 1.424771 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51cb2cf29acb6f4d2e5fa77cbaaa7b0f') in 0.010200 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 269
+========================================================================
+Received Import Request.
+  Time since last request: 2.022960 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9af5a45100dfd636a2e7dc8964165b76') in 0.010166 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 269
+========================================================================
+Received Import Request.
+  Time since last request: 9.485656 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18a5e9a5059435957fe103a22c7898f2') in 0.010569 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 270
+========================================================================
+Received Import Request.
+  Time since last request: 8.058680 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57f8fa80c22d71b13fba8c7429d4bda4') in 0.011306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 270
+========================================================================
+Received Import Request.
+  Time since last request: 8.868021 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cde2b436c122ce78494678b4f1de16b') in 0.011165 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 271
+========================================================================
+Received Import Request.
+  Time since last request: 13.119386 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e197f95ad354c15f53a8cc312d61195a') in 0.010036 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 271
+========================================================================
+Received Import Request.
+  Time since last request: 11.706798 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cfd896158e32177fe1163dec4a0ad0c') in 0.012014 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 271
+========================================================================
+Received Import Request.
+  Time since last request: 1.185656 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c591fe4ab2f29e4388907ca48613284a') in 0.010259 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 271
+========================================================================
+Received Import Request.
+  Time since last request: 2.614442 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eaf315a29ec5f28c29feac9ec1da245') in 0.012113 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 271
+========================================================================
+Received Import Request.
+  Time since last request: 2.811752 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fde90f81487b3c901f40bc5f719d6e4f') in 0.015591 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 271
+========================================================================
+Received Import Request.
+  Time since last request: 2.219202 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd039e073c7087a1ac540e3bb4fd189f9') in 0.011954 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 271
+========================================================================
+Received Import Request.
+  Time since last request: 3.418180 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ff33222491163236bc990a9b89f76a3') in 0.010534 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 271
+========================================================================
+Received Import Request.
+  Time since last request: 6.055452 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b19ef5f8a74719175f961936b168df56') in 0.011014 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 271
+========================================================================
+Received Import Request.
+  Time since last request: 8.068697 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e41b005da7709193bf299f17cbf8b5') in 0.010537 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 271
+========================================================================
+Received Import Request.
+  Time since last request: 6.284933 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '005d8bcde764e2a4f83abf452a02e614') in 0.009786 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 229
+========================================================================
+Received Import Request.
+  Time since last request: 3.634539 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab2c5752d82c1041076703cd9d5f0a2f') in 0.012360 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 229
+========================================================================
+Received Import Request.
+  Time since last request: 4.951141 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcb59f224c0b4485f91ea2cf7300a19d') in 0.010419 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 225
+========================================================================
+Received Import Request.
+  Time since last request: 3.189438 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbc4c5d2a97511fc6436d09ba8e64dc4') in 0.011034 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 221
+========================================================================
+Received Import Request.
+  Time since last request: 2.842631 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39dde8e338eb00ff7c1db698b742e560') in 0.010045 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 217
+========================================================================
+Received Import Request.
+  Time since last request: 3.306895 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02721682a7c660c85b603db310d41469') in 0.009962 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 213
+========================================================================
+Received Import Request.
+  Time since last request: 4.072495 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa492d42b82f26b844982eef100a13dc') in 0.009645 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 193
+========================================================================
+Received Import Request.
+  Time since last request: 2.498608 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '566fdb2879b579e442b09a31b7237c98') in 0.009050 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 175
+========================================================================
+Received Import Request.
+  Time since last request: 2.929566 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb160f921b4ee4c36364765ba60d7bc5') in 0.008736 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 3.630043 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d3ab9bf0ffad4ec46b60ccf91111e9e') in 0.008697 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 6.677355 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e057b40f5b929ec0aa5f7b21cae5a771') in 0.008735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 3.017494 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e576516c53aac2e5e28a228d92cc3b6') in 0.009750 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 1.814563 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dbaf99e4a6b8c68a5608f7ff4c67894') in 0.008834 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 4.628551 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df136afcb6565ae64742b277e2213ed') in 0.008568 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 11.536795 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44c1e3345921b319c38fbed12cf72c43') in 0.008686 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 3.415356 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dc35437bc0068cddb58a0acc24d70dc') in 0.009005 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 1.806564 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '625d9a2df044a756da97f789d4d89f0d') in 0.008827 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 2.196877 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '072c181dce9b7622dbd19193963410a9') in 0.008684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 1.010379 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c132e44a9a76db7200086d26fa1cb470') in 0.008121 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 3.405965 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33ed74a9928e1a435dd2fc00bb45a015') in 0.008688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 7.897653 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e0d6a5a1849dbeabb611660818b8326') in 0.009266 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 1.203179 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2021ee9c7327db0bc76b65ef7260a937') in 0.008457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 2.415921 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18f213e0a013a09e691698afb50a29e5') in 0.009419 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 1.399822 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '499d4ed833387352b81ba13437b9575f') in 0.008712 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 1.211804 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff2988ae46e9d3ba4ae21ede6b33092') in 0.008618 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 2.610520 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47f343f351c7578783342e1e582591ad') in 0.009245 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 3.414157 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee59d91615838a0490b97931b3a20e9e') in 0.008797 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 30.497871 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46b7a227cb9bd7348f099a9d04dde0ca') in 0.008988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 5.024884 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '528ad69c90e86ff938d485d17cee4c0a') in 0.009305 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 156
+========================================================================
+Received Import Request.
+  Time since last request: 1.001359 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28c6b3885c9f715471f80e0fd0156cd8') in 0.009175 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 0.816214 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ab01d7689d79b3b1a8147dd7bfad1ba') in 0.008500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 156
+========================================================================
+Received Import Request.
+  Time since last request: 3.217739 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a76ee1b8028e16e558874861fdeeb31') in 0.009038 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 12.524664 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded3002613208db9e069da36a116e16e') in 0.008043 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 7.056267 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32eb1b956eb71dc636d7c9d9c69009da') in 0.008816 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 3.832231 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall.prefab
+  artifactKey: Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall.prefab using Guid(e3c48a62cdbbc4ffba930605c3707db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '356b883c69230c92dab000c6be289b27') in 0.022037 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 156
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16fc1f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.230 seconds
+Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.640 seconds
+Domain Reload Profiling: 870ms
+	BeginReloadAssembly (74ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (119ms)
+		LoadAssemblies (135ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (640ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (215ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (28ms)
+			ProcessInitializeOnLoadAttributes (173ms)
+			ProcessInitializeOnLoadMethodAttributes (9ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3485 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (45.7 KB). Loaded Objects now: 3982.
+Memory consumption went from 184.7 MB to 184.7 MB.
+Total: 2.442292 ms (FindLiveObjects: 0.131334 ms CreateObjectMapping: 0.058666 ms MarkObjects: 2.198375 ms  DeleteObjects: 0.053416 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 113.384230 seconds.
+  path: Assets/TileSets/BlocksBasic/AlternateWall 1.prefab
+  artifactKey: Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/AlternateWall 1.prefab using Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c535679f8be26b466923b213066dd8e') in 0.044198 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 8.860297 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeWall.prefab
+  artifactKey: Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeWall.prefab using Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3c7169cdd0bfd711053e4e5ebee4a62') in 0.008529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 22.797971 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeWall.prefab
+  artifactKey: Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeWall.prefab using Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5a35fa0223b8c0424e376cff60057e3') in 0.013290 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 8.278233 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeWall.prefab
+  artifactKey: Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeWall.prefab using Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9d13d952209a87927dd48942c1f092f') in 0.012607 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 4.423781 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeWall.prefab
+  artifactKey: Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeWall.prefab using Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95108b9d1471007ec93f402eb3e447b4') in 0.008317 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 16.336130 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeWall.prefab
+  artifactKey: Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeWall.prefab using Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c3ca91455aac554e24e3a6691cdd5f5') in 0.009012 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 3.646768 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeWall.prefab
+  artifactKey: Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeWall.prefab using Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0535bb4a0e6f80c9531f2bd78dac58d') in 0.008956 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 1.829884 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeWall.prefab
+  artifactKey: Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeWall.prefab using Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3abaacc9e8768a426e60aa5abe629a53') in 0.008555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 4.223207 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeWall.prefab
+  artifactKey: Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeWall.prefab using Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21277449fb80e7289e34e4f1fb1074fc') in 0.008588 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 7.469216 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeWall.prefab
+  artifactKey: Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeWall.prefab using Guid(255c95995ddce4f3886aa32432365ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32afebbd6f8f65c7a0e07e9ab85b0974') in 0.008857 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16fc1f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.221 seconds
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.610 seconds
+Domain Reload Profiling: 831ms
+	BeginReloadAssembly (75ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (108ms)
+		LoadAssemblies (123ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (610ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (220ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (176ms)
+			ProcessInitializeOnLoadMethodAttributes (9ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3485 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (31.6 KB). Loaded Objects now: 3985.
+Memory consumption went from 192.9 MB to 192.9 MB.
+Total: 2.258041 ms (FindLiveObjects: 0.130208 ms CreateObjectMapping: 0.054333 ms MarkObjects: 2.039458 ms  DeleteObjects: 0.033458 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 113.917037 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeWall 1.prefab
+  artifactKey: Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeWall 1.prefab using Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83485f9f1e1f53f114a6c1b2eb5dd7ce') in 0.044753 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 9.948347 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeCutWall.prefab
+  artifactKey: Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeCutWall.prefab using Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c215ae58326bb1bd3c7d7910b711141') in 0.007723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 26.720114 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeCutWall.prefab
+  artifactKey: Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeCutWall.prefab using Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df10378dca717a8bfd99e780e557e340') in 0.009927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 6.112585 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeCutWall.prefab
+  artifactKey: Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeCutWall.prefab using Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce0ab5342104192261b7b26346b79333') in 0.008614 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 157
+========================================================================
+Received Import Request.
+  Time since last request: 7.675967 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeCutWall.prefab
+  artifactKey: Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeCutWall.prefab using Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e35daa4f3c7cc59c6e0a41bfe4411388') in 0.009654 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 4.448675 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeCutWall.prefab
+  artifactKey: Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeCutWall.prefab using Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f14fbd2a6fe547aa9d6d4f86061919') in 0.009320 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 19.367927 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeCutWall.prefab
+  artifactKey: Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeCutWall.prefab using Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28b0454b600849f7f7bfe63f3a43d437') in 0.008818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16fc1f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.212 seconds
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.604 seconds
+Domain Reload Profiling: 816ms
+	BeginReloadAssembly (73ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (103ms)
+		LoadAssemblies (119ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (604ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (220ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (28ms)
+			ProcessInitializeOnLoadAttributes (177ms)
+			ProcessInitializeOnLoadMethodAttributes (9ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3485 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (31.8 KB). Loaded Objects now: 3988.
+Memory consumption went from 201.0 MB to 201.0 MB.
+Total: 2.431583 ms (FindLiveObjects: 0.132834 ms CreateObjectMapping: 0.056041 ms MarkObjects: 2.207125 ms  DeleteObjects: 0.035041 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 67.764109 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeCutWall.prefab
+  artifactKey: Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeCutWall.prefab using Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd06400154a8828d9da34fcf54260fcf') in 0.050986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 5.359227 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeCutWall.prefab
+  artifactKey: Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeCutWall.prefab using Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06b112ed4edd07749c7baeb9dda6c4e8') in 0.015052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 2.638583 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeCutWall.prefab
+  artifactKey: Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeCutWall.prefab using Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f09380a75e4cf34eb2d4c28c80cc5dfd') in 0.016168 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 2.404420 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeCutWall.prefab
+  artifactKey: Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeCutWall.prefab using Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31f51de9c9acf4ba2aa26047b2fcc265') in 0.016514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 11.889740 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeCutWall.prefab
+  artifactKey: Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeCutWall.prefab using Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d76d75b964a33df72258466324c3a27') in 0.015003 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 7.266812 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeCutWall.prefab
+  artifactKey: Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeCutWall.prefab using Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd09253193749d19de00c4b3fbbe25111') in 0.015622 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 1.196308 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeCutWall.prefab
+  artifactKey: Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeCutWall.prefab using Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c05e425d3baa22985b4ad6c9b205dbd7') in 0.015934 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 5.444916 seconds.
+  path: Assets/TileSets/BlocksBasic/TreeCutWall.prefab
+  artifactKey: Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/TreeCutWall.prefab using Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cce4b5543f5bb28614020482ca846d4a') in 0.016499 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 15.017016 seconds.
+  path: Assets/TileSets/BlocksBasic/SmallTreeWall.prefab
+  artifactKey: Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TileSets/BlocksBasic/SmallTreeWall.prefab using Guid(74caeb005e2d444a58ecad8898b236d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a84929bd215fbfcf143369e3c58d8da') in 0.015236 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16fc1f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.216 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.610 seconds
+Domain Reload Profiling: 826ms
+	BeginReloadAssembly (72ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (12ms)
+	LoadAllAssembliesAndSetupDomain (105ms)
+		LoadAssemblies (120ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (610ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (217ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (28ms)
+			ProcessInitializeOnLoadAttributes (175ms)
+			ProcessInitializeOnLoadMethodAttributes (9ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3485 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (31.7 KB). Loaded Objects now: 3991.
+Memory consumption went from 209.2 MB to 209.1 MB.
+Total: 2.276167 ms (FindLiveObjects: 0.128333 ms CreateObjectMapping: 0.053709 ms MarkObjects: 2.062083 ms  DeleteObjects: 0.031500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16fc1f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.226 seconds
+Refreshing native plugins compatible for Editor in 0.94 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.638 seconds
+Domain Reload Profiling: 864ms
+	BeginReloadAssembly (73ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (115ms)
+		LoadAssemblies (130ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (639ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (220ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (28ms)
+			ProcessInitializeOnLoadAttributes (177ms)
+			ProcessInitializeOnLoadMethodAttributes (10ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3486 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (31.8 KB). Loaded Objects now: 3994.
+Memory consumption went from 216.9 MB to 216.8 MB.
+Total: 2.316750 ms (FindLiveObjects: 0.117917 ms CreateObjectMapping: 0.054459 ms MarkObjects: 2.111750 ms  DeleteObjects: 0.032167 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16f58f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.228 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.584 seconds
+Domain Reload Profiling: 812ms
+	BeginReloadAssembly (74ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (12ms)
+	LoadAllAssembliesAndSetupDomain (113ms)
+		LoadAssemblies (123ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (585ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (203ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (27ms)
+			ProcessInitializeOnLoadAttributes (163ms)
+			ProcessInitializeOnLoadMethodAttributes (8ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3486 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (31.7 KB). Loaded Objects now: 3997.
+Memory consumption went from 224.3 MB to 224.3 MB.
+Total: 2.071542 ms (FindLiveObjects: 0.108042 ms CreateObjectMapping: 0.049583 ms MarkObjects: 1.885292 ms  DeleteObjects: 0.028125 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16f58f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.207 seconds
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.392 seconds
+Domain Reload Profiling: 599ms
+	BeginReloadAssembly (72ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (12ms)
+	LoadAllAssembliesAndSetupDomain (96ms)
+		LoadAssemblies (113ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (392ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (223ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (178ms)
+			ProcessInitializeOnLoadMethodAttributes (10ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 1.03 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3486 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (31.8 KB). Loaded Objects now: 4000.
+Memory consumption went from 231.8 MB to 231.8 MB.
+Total: 2.587000 ms (FindLiveObjects: 0.138083 ms CreateObjectMapping: 0.058125 ms MarkObjects: 2.348125 ms  DeleteObjects: 0.042083 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
