@@ -1,5 +1,5 @@
 using ShareefSoftware.Input;
-using ShreefSoftware;
+using ShareefSoftware;
 using UnityEngine;
 
 namespace ShareefSoftware
@@ -9,6 +9,8 @@ namespace ShareefSoftware
         private RotationControl inputScheme;
         [SerializeField] private SceneRotator Rotator;
 
+        private RotationHandler rotationHandler; // Store a reference to RotationHandler
+
         private void Awake()
         {
             inputScheme = new RotationControl();
@@ -16,7 +18,8 @@ namespace ShareefSoftware
 
         private void OnEnable()
         {
-            var RotationHandler = new RotationHandler(inputScheme.SceneRotation.Rotation, this.Rotator);
+            // Assign Rotator before creating RotationHandler
+            rotationHandler = new RotationHandler(inputScheme.SceneRotation.Rotation, this.Rotator);
         }
     }
 }

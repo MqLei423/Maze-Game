@@ -1,7 +1,7 @@
 using ShareefSoftware;
 using UnityEngine.InputSystem;
 
-namespace ShreefSoftware
+namespace ShareefSoftware
 {
     public class RotationHandler
     {

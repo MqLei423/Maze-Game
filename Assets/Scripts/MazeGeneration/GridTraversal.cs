@@ -58,14 +58,13 @@ namespace ShareefSoftware
                     // Select an edge randomly
                     int rndIndex = random.Next(allNominees.Count);
                     var next = allNominees[rndIndex];
-                    bool[,] copy = visited;
 
                     // Find the visited vertex the edge extend from
                     int splitingCellRow = -1;
                     int splitingCellColumn = -1;
                     foreach(var nextNeighbor in grid.Neighbors(next.Row, next.Column))
                     {
-                        if (copy[nextNeighbor.Row, nextNeighbor.Column])
+                        if (visited[nextNeighbor.Row, nextNeighbor.Column])
                         {
                             splitingCellRow = nextNeighbor.Row;
                             splitingCellColumn = nextNeighbor.Column;
