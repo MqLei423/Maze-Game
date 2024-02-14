@@ -425,6 +425,7 @@ MonoBehaviour:
   - {fileID: 3093966231757914467, guid: 74caeb005e2d444a58ecad8898b236d1, type: 3}
   pathPrefabs:
   - {fileID: 6869099080896954662, guid: 3a69e0e92dc07c0499883ea2e2a04ddd, type: 3}
+  - {fileID: 3093966231757914467, guid: d82591edb2ec044978a33f7f2689e9c3, type: 3}
   cellWidth: 4
   cellHeight: 4
   parentForNewObjects: {fileID: 882375733}

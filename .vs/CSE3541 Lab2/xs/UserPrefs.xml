@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{6918B927-F18F-FD19-8EBC-5AE1E69F8B3F}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MazeGeneration/GridTraversal.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MazeGeneration/Maze.cs">
     <Files>
-      <File FileName="Assets/Scripts/MazeGeneration/GridTraversal.cs" Line="42" Column="18" />
-      <File FileName="Assets/Scripts/MazeGeneration/Maze.cs" Line="32" Column="179" />
+      <File FileName="Assets/Scripts/MazeGeneration/GridTraversal.cs" Line="15" Column="24" />
+      <File FileName="Assets/Scripts/MazeGeneration/Maze.cs" Line="72" Column="63" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="CSE3541 Lab2">
+          <Node name="CSE3541 Lab2" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="MazeGeneration" expanded="True" />
@@ -18,11 +18,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e3b8e047-961f-415c-b3c6-13a21b6cb792" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b49bdad3-367e-4577-a296-9ea768304c41" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>
