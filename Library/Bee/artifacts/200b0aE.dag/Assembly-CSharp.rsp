@@ -357,7 +357,7 @@
 "Assets/AurynSky/Forest Pack/Scripts/MaterialMover.cs"
 "Assets/AurynSky/Forest Pack/Scripts/Rotator.cs"
 "Assets/AurynSky/Forest Pack/Scripts/WheelController.cs"
-"Assets/Input/RotationControl.cs"
+"Assets/Input/Controls.cs"
 "Assets/Scripts/GameObjectFactoryPrefab.cs"
 "Assets/Scripts/GameObjectFactoryRandomFromList.cs"
 "Assets/Scripts/GridGameObjectFactory.cs"
@@ -378,6 +378,9 @@
 "Assets/Scripts/MazeGeneration/MazeQuery.cs"
 "Assets/Scripts/MazeGeneration/MazeUtility.cs"
 "Assets/Scripts/MazeGeneration/StampSet.cs"
+"Assets/Scripts/Player/CameraFollow.cs"
+"Assets/Scripts/Player/CameraRotate.cs"
+"Assets/Scripts/Player/MovementControl.cs"
 "Assets/Scripts/RotationHandler.cs"
 "Assets/Scripts/SceneRotator.cs"
 -langversion:9.0
