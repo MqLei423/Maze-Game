@@ -7,6 +7,7 @@ namespace ShareefSoftware
     {
         [SerializeField] private GameObject playerToMove;
         private float speed = 0.1f;
+        private float sprintSpd = 0.2f;
         private InputAction moveAction;
         private InputAction rotation;
 
@@ -20,16 +21,21 @@ namespace ShareefSoftware
 
         private void FixedUpdate()
         {
-            Vector2 horizontalMovement = this.moveAction.ReadValue<Vector2>();
+            Vector2 movementInput = this.moveAction.ReadValue<Vector2>();
             Vector3 playerPos = this.playerToMove.transform.position;
 
+            // Get the player's current rotation
+            Quaternion playerRotation = this.playerToMove.transform.rotation;
+
+            // Transform the input movement from local to world space
+            Vector3 movement = playerRotation * new Vector3(movementInput.x, 0f, movementInput.y);
+
             // Calculate the new position
-            Vector3 newPosition = new Vector3(playerPos.x + horizontalMovement.x, playerPos.y, playerPos.z + horizontalMovement.y);
+            Vector3 newPosition = playerPos + movement * speed;
+            newPosition.y = playerPos.y;
 
             // Move the player to the new position
             this.playerToMove.transform.position = Vector3.MoveTowards(playerPos, newPosition, speed);
-
-
         }
     }
 }

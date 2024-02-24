@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class CameraRotate : MonoBehaviour
 {
+    [SerializeField] private GameObject playerToMove;
     private InputAction input;
     private float speed = 10f;
 
@@ -17,7 +18,7 @@ public class CameraRotate : MonoBehaviour
         Vector2 mousePos = this.input.ReadValue<Vector2>();
         mousePos *= speed;
         Quaternion deltaRotation = Quaternion.Euler(-mousePos.y, mousePos.x, 0f);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, transform.rotation * deltaRotation, speed);
-
+        Quaternion target = playerToMove.transform.rotation * deltaRotation;
+        playerToMove.transform.rotation = Quaternion.RotateTowards(playerToMove.transform.rotation, target, speed);
     }
 }
