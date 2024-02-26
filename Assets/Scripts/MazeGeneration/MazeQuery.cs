@@ -22,9 +22,9 @@ namespace ShareefSoftware
 
         public static IEnumerable<(int Row, int Column)> DeadEnds(this Maze maze)
         {
-            //var query = from cell in maze
-            //            where (cell.NodeValue == Direction.North || cell.NodeValue == Direction.South || cell.NodeValue == Direction.East || cell.NodeValue == Direction.West)
-            //            select (cell.Row, cell.Column);
+            /*var query = from cell in maze
+                        where (cell.NodeValue == Direction.North || cell.NodeValue == Direction.South || cell.NodeValue == Direction.East || cell.NodeValue == Direction.West)
+                        select (cell.Row, cell.Column);*/
             var query = from cell in maze
                         where cell.NodeValue.IsDeadEnd()
                         select (cell.Row, cell.Column);

@@ -72,6 +72,7 @@
     <Compile Include="Assets/Input/Controls.cs" />
     <Compile Include="Assets/Scripts/LevelGeneration.cs" />
     <Compile Include="Assets/Scripts/InputManager.cs" />
+    <Compile Include="Assets/Scripts/Player/GameWinning.cs" />
     <Compile Include="Assets/AurynSky/Forest Pack/Scripts/Rotator.cs" />
     <Compile Include="Assets/Scripts/MazeGeneration/GridGraphRandomizedNeighborsDecorator.cs" />
     <Compile Include="Assets/Scripts/CollectionEffect.cs" />
@@ -86,6 +87,9 @@
     <Compile Include="Assets/AurynSky/Forest Pack/Scripts/WheelController.cs" />
     <Compile Include="Assets/Scripts/MazeGeneration/GridUtility.cs" />
     <Compile Include="Assets/Scripts/MazeGeneration/GridGraph.cs" />
+    <Compile Include="Assets/Scripts/CoinFactory.cs" />
+    <Compile Include="Assets/Scripts/GameOverReset.cs" />
+    <Compile Include="Assets/Scripts/Player/WinningTextDisplay.cs" />
     <Compile Include="Assets/Scripts/GameObjectFactoryRandomFromList.cs" />
     <Compile Include="Assets/Scripts/MazeGeneration/IGraphValueAccessor.cs" />
     <Compile Include="Assets/Scripts/MazeGeneration/GraphValueAccessorConstant.cs" />

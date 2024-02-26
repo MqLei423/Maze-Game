@@ -15,6 +15,8 @@ namespace ShareefSoftware
         [SerializeField] private float cellHeight;
         [SerializeField] private Transform parentForNewObjects;
         [SerializeField] int randomSeed = 0;
+        [SerializeField] GameObject DestSign;
+        [SerializeField] GameObject Player;
         private List<(int Row, int Column)> deadEnds;
 
         private void Awake()
@@ -23,14 +25,30 @@ namespace ShareefSoftware
             var maze = new Maze(numberOfRows, numberOfColumns, random);
             deadEnds = findDeadEnds(maze);
             IGridGraph<bool> occupancyGrid = ConvertMazeToOccupancyGraph(maze);
-            CreatePrefabs(random, occupancyGrid, deadEnds);
+            CreatePrefabs(random, occupancyGrid);
+            MakeExit();
+            spawnPlayer();
+            CreateCoins(random, occupancyGrid, deadEnds);
+        }
+
+        private void spawnPlayer()
+        {
+            Vector3 startPos = new Vector3(cellWidth , 2f, 0f);
+            Player.transform.position = startPos;
+        }
+
+        private void MakeExit()
+        {
+            Vector3 exitPos = new Vector3(numberOfRows * cellWidth * 2 - cellWidth, 0, numberOfColumns * cellWidth * 2);
+            DestSign.transform.position = exitPos;
+            //Instantiate(DestSign, exitPos, Quaternion.identity);
         }
 
         // Create a list containing all the deadends in the maze
         private List<(int Row, int Column)> findDeadEnds(Maze maze)
         {
             List<(int Row, int Column)> result = new List<(int Row, int Column)>();
-            foreach ((int row, int column) in MazeQuery.DeadEndsNoLinq(maze))
+            foreach ((int row, int column) in MazeQuery.DeadEnds(maze))
             {
                 result.Add((row, column));
             }
@@ -38,18 +56,28 @@ namespace ShareefSoftware
             return result;
         }
 
-        private void CreatePrefabs(System.Random random, IGridGraph<bool> occupancyGrid, List<(int Row, int Column)> deadEnds)
+        private void CreateCoins(System.Random random, IGridGraph<bool> occupancyGrid, List<(int Row, int Column)> deadEnds)
         {
             var pathFactory = new GameObjectFactoryRandomFromList(pathPrefabs, random) { Parent = parentForNewObjects };
             var wallFactory = new GameObjectFactoryRandomFromList(barrierPrefabs, random) { Parent = parentForNewObjects };
             var powerUpFactory = new GameObjectFactoryRandomFromList(powerUps, random) { Parent = parentForNewObjects };
+            var coinFactory = new CoinFactory(cellWidth, cellHeight)
+            {
+                PrefabFactoryDeadEnd = powerUpFactory
+            };
+            coinFactory.CreatePrefabs(occupancyGrid, deadEnds);
+        }
+
+        private void CreatePrefabs(System.Random random, IGridGraph<bool> occupancyGrid)
+        {
+            var pathFactory = new GameObjectFactoryRandomFromList(pathPrefabs, random) { Parent = parentForNewObjects };
+            var wallFactory = new GameObjectFactoryRandomFromList(barrierPrefabs, random) { Parent = parentForNewObjects };
             var gridFactory = new GridGameObjectFactory(cellWidth, cellHeight)
             {
                 PrefabFactoryIfTrue = pathFactory,
                 PrefabFactoryIfFalse = wallFactory,
-                PrefabFactoryDeadEnd = powerUpFactory
             };
-            gridFactory.CreatePrefabs(occupancyGrid, deadEnds);
+            gridFactory.CreatePrefabs(occupancyGrid);
         }
 
         private System.Random CreateRandom()
