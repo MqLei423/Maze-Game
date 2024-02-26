@@ -17,6 +17,7 @@ namespace ShareefSoftware
         [SerializeField] int randomSeed = 0;
         [SerializeField] GameObject DestSign;
         [SerializeField] GameObject Player;
+        [SerializeField] GameObject coin;
         private List<(int Row, int Column)> deadEnds;
 
         private void Awake()
@@ -27,11 +28,20 @@ namespace ShareefSoftware
             IGridGraph<bool> occupancyGrid = ConvertMazeToOccupancyGraph(maze);
             CreatePrefabs(random, occupancyGrid);
             MakeExit();
-            spawnPlayer();
-            CreateCoins(random, occupancyGrid, deadEnds);
+            PlaceCoins();
+            SpawnPlayer();
         }
 
-        private void spawnPlayer()
+        private void PlaceCoins()
+        {
+            foreach((int row, int column) in deadEnds)
+            {
+                Vector3 coinPos = new Vector3(column * cellWidth * 2 + cellWidth, 0f, row * cellWidth * 2 + cellWidth);
+                Instantiate(coin, coinPos, Quaternion.identity);
+            }
+        }
+
+        private void SpawnPlayer()
         {
             Vector3 startPos = new Vector3(cellWidth , 2f, 0f);
             Player.transform.position = startPos;
@@ -41,7 +51,6 @@ namespace ShareefSoftware
         {
             Vector3 exitPos = new Vector3(numberOfRows * cellWidth * 2 - cellWidth, 0, numberOfColumns * cellWidth * 2);
             DestSign.transform.position = exitPos;
-            //Instantiate(DestSign, exitPos, Quaternion.identity);
         }
 
         // Create a list containing all the deadends in the maze
@@ -54,18 +63,6 @@ namespace ShareefSoftware
             }
 
             return result;
-        }
-
-        private void CreateCoins(System.Random random, IGridGraph<bool> occupancyGrid, List<(int Row, int Column)> deadEnds)
-        {
-            var pathFactory = new GameObjectFactoryRandomFromList(pathPrefabs, random) { Parent = parentForNewObjects };
-            var wallFactory = new GameObjectFactoryRandomFromList(barrierPrefabs, random) { Parent = parentForNewObjects };
-            var powerUpFactory = new GameObjectFactoryRandomFromList(powerUps, random) { Parent = parentForNewObjects };
-            var coinFactory = new CoinFactory(cellWidth, cellHeight)
-            {
-                PrefabFactoryDeadEnd = powerUpFactory
-            };
-            coinFactory.CreatePrefabs(occupancyGrid, deadEnds);
         }
 
         private void CreatePrefabs(System.Random random, IGridGraph<bool> occupancyGrid)
