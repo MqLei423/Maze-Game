@@ -32,6 +32,7 @@ namespace ShareefSoftware
             SpawnPlayer();
         }
 
+        // Place coins in dead ends, taking into accound the cell size
         private void PlaceCoins()
         {
             foreach((int row, int column) in deadEnds)
@@ -41,15 +42,17 @@ namespace ShareefSoftware
             }
         }
 
+        // Spawn player in correct position
         private void SpawnPlayer()
         {
             Vector3 startPos = new Vector3(cellWidth , 2f, 0f);
             Player.transform.position = startPos;
         }
 
+        // Move the gameover trigger to exit
         private void MakeExit()
         {
-            Vector3 exitPos = new Vector3(numberOfRows * cellWidth * 2 - cellWidth, 0, numberOfColumns * cellWidth * 2);
+            Vector3 exitPos = new Vector3(numberOfColumns * cellWidth * 2 - cellWidth, 0, numberOfRows * cellWidth * 2);
             DestSign.transform.position = exitPos;
         }
 

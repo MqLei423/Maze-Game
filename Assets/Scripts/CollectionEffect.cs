@@ -5,6 +5,7 @@ namespace ShareefSoftware
     public class CoinCollector : MonoBehaviour
     {
         [SerializeField] private GameObject target;
+        [SerializeField] private AudioSource aud;
 
         private bool isCollecting = false;
 
@@ -34,6 +35,8 @@ namespace ShareefSoftware
 
             if (inventory != null)
                 inventory.Collect();
+            
+            aud.Play();
         }
     }
 }
