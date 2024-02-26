@@ -10,29 +10,46 @@ namespace ShareefSoftware
         [SerializeField] int numberOfColumns = 10;
         [SerializeField] List<GameObject> barrierPrefabs;
         [SerializeField] List<GameObject> pathPrefabs;
+        [SerializeField] List<GameObject> powerUps;
         [SerializeField] private float cellWidth;
         [SerializeField] private float cellHeight;
         [SerializeField] private Transform parentForNewObjects;
         [SerializeField] int randomSeed = 0;
+        private List<(int Row, int Column)> deadEnds;
 
         private void Awake()
         {
             System.Random random = CreateRandom();
             var maze = new Maze(numberOfRows, numberOfColumns, random);
+            deadEnds = findDeadEnds(maze);
             IGridGraph<bool> occupancyGrid = ConvertMazeToOccupancyGraph(maze);
-            CreatePrefabs(random, occupancyGrid);
+            CreatePrefabs(random, occupancyGrid, deadEnds);
         }
 
-        private void CreatePrefabs(System.Random random, IGridGraph<bool> occupancyGrid)
+        // Create a list containing all the deadends in the maze
+        private List<(int Row, int Column)> findDeadEnds(Maze maze)
+        {
+            List<(int Row, int Column)> result = new List<(int Row, int Column)>();
+            foreach ((int row, int column) in MazeQuery.DeadEndsNoLinq(maze))
+            {
+                result.Add((row, column));
+            }
+
+            return result;
+        }
+
+        private void CreatePrefabs(System.Random random, IGridGraph<bool> occupancyGrid, List<(int Row, int Column)> deadEnds)
         {
             var pathFactory = new GameObjectFactoryRandomFromList(pathPrefabs, random) { Parent = parentForNewObjects };
             var wallFactory = new GameObjectFactoryRandomFromList(barrierPrefabs, random) { Parent = parentForNewObjects };
+            var powerUpFactory = new GameObjectFactoryRandomFromList(powerUps, random) { Parent = parentForNewObjects };
             var gridFactory = new GridGameObjectFactory(cellWidth, cellHeight)
             {
                 PrefabFactoryIfTrue = pathFactory,
-                PrefabFactoryIfFalse = wallFactory
+                PrefabFactoryIfFalse = wallFactory,
+                PrefabFactoryDeadEnd = powerUpFactory
             };
-            gridFactory.CreatePrefabs(occupancyGrid);
+            gridFactory.CreatePrefabs(occupancyGrid, deadEnds);
         }
 
         private System.Random CreateRandom()

@@ -10,13 +10,16 @@ namespace ShareefSoftware
         private float sprintSpd = 0.2f;
         private InputAction moveAction;
         private InputAction rotation;
+        private InputAction sprint;
 
-        public void Initialize(InputAction moveAction, InputAction rotation)
+        public void Initialize(InputAction moveAction, InputAction rotation, InputAction sprint)
         {
             this.moveAction = moveAction;
             this.moveAction.Enable();
             this.rotation = rotation;
             this.rotation.Enable();
+            this.sprint = sprint;
+            this.sprint.Enable();
         }
 
         private void FixedUpdate()
@@ -31,11 +34,15 @@ namespace ShareefSoftware
             Vector3 movement = playerRotation * new Vector3(movementInput.x, 0f, movementInput.y);
 
             // Calculate the new position
-            Vector3 newPosition = playerPos + movement * speed;
-            newPosition.y = playerPos.y;
+            Vector3 newPos;
+            if (sprint.IsPressed())
+                newPos = playerPos + movement * sprintSpd;
+            else
+                newPos = playerPos + movement * speed;
+            newPos.y = playerPos.y;
 
             // Move the player to the new position
-            this.playerToMove.transform.position = Vector3.MoveTowards(playerPos, newPosition, speed);
+            this.playerToMove.transform.position = Vector3.MoveTowards(playerPos, newPos, sprintSpd);
         }
     }
 }

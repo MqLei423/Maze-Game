@@ -28,12 +28,6 @@ namespace ShareefSoftware
             if (column > 0) yield return (row, column - 1);
         }
 
-        /*
-         * (Optional) If you defined your own method signature in IGridGraph
-         * to determine neighbors (instead of using method 'Neighbors'), 
-         * then define it here. Use the same method name as you defined in IGridGraph.
-         */
-
         public void SetCellValue(int row, int column, T cellValue)
         {
             graphNodes.SetNodeValue(row, column, cellValue);

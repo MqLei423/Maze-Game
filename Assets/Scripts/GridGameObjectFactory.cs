@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace ShareefSoftware
 {
@@ -12,6 +13,7 @@ namespace ShareefSoftware
 
         public IGameObjectFactory PrefabFactoryIfTrue { get; set; }
         public IGameObjectFactory PrefabFactoryIfFalse { get; set; }
+        public IGameObjectFactory PrefabFactoryDeadEnd { get; set; }
 
         public GridGameObjectFactory(float cellWidth, float cellHeight)
         {
@@ -19,7 +21,7 @@ namespace ShareefSoftware
             this.cellHeight = cellHeight;
         }
 
-        public void CreatePrefabs(IGridGraph<bool> grid)
+        public void CreatePrefabs(IGridGraph<bool> grid, List<(int Row, int Column)> deadEnds)
         {
             for (int row = 0; row < grid.NumberOfRows; row++)
             {
@@ -36,6 +38,10 @@ namespace ShareefSoftware
                     else
                     {
                         PrefabFactoryIfFalse.CreateAt(position, name);
+                    }
+                    if (deadEnds.Contains((row, column)))
+                    {
+                        PrefabFactoryDeadEnd.CreateAt(position, name);
                     }
                 }
             }

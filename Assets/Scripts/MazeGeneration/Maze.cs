@@ -26,9 +26,7 @@ namespace ShareefSoftware
 
         private void CreateMaze(int numberOfRows, int numberOfColumns, System.Random random)
         {
-            /*
-             * Replace ??? with your code
-             */
+            
             var grid = new GridGraphRandomizedNeighborsDecorator<int>(new GridGraph<int>(numberOfRows, numberOfColumns, GraphValueAccessorConstant<int>.DefaultConstant), random);
 
             var mazeGenerator = new GridTraversal<int>(grid);

@@ -17,7 +17,7 @@ namespace ShareefSoftware
         private void Awake()
         {
             inputScheme = new Controls();
-            movementController.Initialize(inputScheme.Maze.Move, inputScheme.Maze.CameraRotation);
+            movementController.Initialize(inputScheme.Maze.Move, inputScheme.Maze.CameraRotation, inputScheme.Maze.Sprint);
             cameraRotate.Initialize(inputScheme.Maze.CameraRotation);
         }
 

@@ -51,10 +51,19 @@ namespace ShareefSoftware.Input
                     ""name"": ""CameraRotation"",
                     ""type"": ""Value"",
                     ""id"": ""ceb46b89-94c0-4a76-ac0b-58e626f5b412"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""expectedControlType"": ""Quaternion"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Sprint"",
+                    ""type"": ""Button"",
+                    ""id"": ""6e7be336-cc0a-40b5-8dd5-95f71b0522c6"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -288,6 +297,17 @@ namespace ShareefSoftware.Input
                     ""action"": ""CameraRotation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a21e7567-e391-460e-913d-8ef3ca353e36"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -299,6 +319,7 @@ namespace ShareefSoftware.Input
             m_Maze_Rotation = m_Maze.FindAction("Rotation", throwIfNotFound: true);
             m_Maze_Move = m_Maze.FindAction("Move", throwIfNotFound: true);
             m_Maze_CameraRotation = m_Maze.FindAction("CameraRotation", throwIfNotFound: true);
+            m_Maze_Sprint = m_Maze.FindAction("Sprint", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -363,6 +384,7 @@ namespace ShareefSoftware.Input
         private readonly InputAction m_Maze_Rotation;
         private readonly InputAction m_Maze_Move;
         private readonly InputAction m_Maze_CameraRotation;
+        private readonly InputAction m_Maze_Sprint;
         public struct MazeActions
         {
             private @Controls m_Wrapper;
@@ -370,6 +392,7 @@ namespace ShareefSoftware.Input
             public InputAction @Rotation => m_Wrapper.m_Maze_Rotation;
             public InputAction @Move => m_Wrapper.m_Maze_Move;
             public InputAction @CameraRotation => m_Wrapper.m_Maze_CameraRotation;
+            public InputAction @Sprint => m_Wrapper.m_Maze_Sprint;
             public InputActionMap Get() { return m_Wrapper.m_Maze; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -388,6 +411,9 @@ namespace ShareefSoftware.Input
                 @CameraRotation.started += instance.OnCameraRotation;
                 @CameraRotation.performed += instance.OnCameraRotation;
                 @CameraRotation.canceled += instance.OnCameraRotation;
+                @Sprint.started += instance.OnSprint;
+                @Sprint.performed += instance.OnSprint;
+                @Sprint.canceled += instance.OnSprint;
             }
 
             private void UnregisterCallbacks(IMazeActions instance)
@@ -401,6 +427,9 @@ namespace ShareefSoftware.Input
                 @CameraRotation.started -= instance.OnCameraRotation;
                 @CameraRotation.performed -= instance.OnCameraRotation;
                 @CameraRotation.canceled -= instance.OnCameraRotation;
+                @Sprint.started -= instance.OnSprint;
+                @Sprint.performed -= instance.OnSprint;
+                @Sprint.canceled -= instance.OnSprint;
             }
 
             public void RemoveCallbacks(IMazeActions instance)
@@ -423,6 +452,7 @@ namespace ShareefSoftware.Input
             void OnRotation(InputAction.CallbackContext context);
             void OnMove(InputAction.CallbackContext context);
             void OnCameraRotation(InputAction.CallbackContext context);
+            void OnSprint(InputAction.CallbackContext context);
         }
     }
 }
