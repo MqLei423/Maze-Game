@@ -51,7 +51,7 @@ namespace ShareefSoftware.Input
                     ""name"": ""CameraRotation"",
                     ""type"": ""Value"",
                     ""id"": ""ceb46b89-94c0-4a76-ac0b-58e626f5b412"",
-                    ""expectedControlType"": ""Quaternion"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -202,7 +202,7 @@ namespace ShareefSoftware.Input
                 {
                     ""name"": ""up"",
                     ""id"": ""273f378a-47b0-46ce-a31f-8e01f822d0e9"",
-                    ""path"": ""<Gamepad>/rightStick/up"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -213,7 +213,7 @@ namespace ShareefSoftware.Input
                 {
                     ""name"": ""down"",
                     ""id"": ""e66553d5-36c9-48c4-9da0-6b65c59093c9"",
-                    ""path"": ""<Gamepad>/rightStick/down"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -224,7 +224,7 @@ namespace ShareefSoftware.Input
                 {
                     ""name"": ""left"",
                     ""id"": ""50a05a9e-311d-4723-a47c-202942d95df3"",
-                    ""path"": ""<Gamepad>/rightStick/left"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -235,7 +235,7 @@ namespace ShareefSoftware.Input
                 {
                     ""name"": ""right"",
                     ""id"": ""e3da049b-561b-494d-8ff6-5e90b0da8acd"",
-                    ""path"": ""<Gamepad>/rightStick/right"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -291,6 +291,61 @@ namespace ShareefSoftware.Input
                     ""name"": ""right"",
                     ""id"": ""a254ce58-24a0-4c47-b98e-90ea41cc2be4"",
                     ""path"": ""<Mouse>/delta/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraRotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Gamepad"",
+                    ""id"": ""0be78189-5ebf-4cd6-ad69-671b132fde50"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraRotation"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""eff80846-c83a-4daa-9cb0-8cb81b977066"",
+                    ""path"": ""<Gamepad>/rightStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraRotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""31bab3c7-8d94-4651-84b6-2d38b8ebde54"",
+                    ""path"": ""<Gamepad>/rightStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraRotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""d3bf8b04-f965-47a3-8b8c-6fcec1074215"",
+                    ""path"": ""<Gamepad>/rightStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraRotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""94d4de35-367f-4be9-aad3-25b022bc8781"",
+                    ""path"": ""<Gamepad>/rightStick/right"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
