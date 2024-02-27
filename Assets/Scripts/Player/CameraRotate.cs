@@ -11,6 +11,7 @@ public class CameraRotate : MonoBehaviour
     {
         this.input = input;
         this.input.Enable();
+        // This is to improve playing experience
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -24,7 +25,7 @@ public class CameraRotate : MonoBehaviour
         float verticleRotation = -y;
         verticleRotation = Mathf.Clamp(verticleRotation, -90f, 90f);
 
-        Quaternion deltaRotation = Quaternion.Euler(sensitivity * verticleRotation/*0f*/, sensitivity * x, 0f);
+        Quaternion deltaRotation = Quaternion.Euler(sensitivity * verticleRotation, sensitivity * x, 0f);
         Quaternion target = playerToMove.transform.rotation * deltaRotation;
         playerToMove.transform.rotation = Quaternion.RotateTowards(playerToMove.transform.rotation, target, float.MaxValue);
 

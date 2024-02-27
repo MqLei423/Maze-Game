@@ -21,7 +21,6 @@ namespace ShareefSoftware
             UpdateText(trigger);
         }
 
-        // Update is called once per frame
         void UpdateText(GameWinning playerInventory)
         {
             text.text = trigger.text;
