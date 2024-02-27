@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Example : MonoBehaviour
+public class Rotate : MonoBehaviour
 {
     [SerializeField]private GameObject target;
     private float minHeight;

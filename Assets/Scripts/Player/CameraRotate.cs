@@ -5,7 +5,7 @@ public class CameraRotate : MonoBehaviour
 {
     [SerializeField] private GameObject playerToMove;
     private InputAction input;
-    [SerializeField]private float sensitivity = 15f;
+    [SerializeField]private float sensitivity = 20f;
 
     public void Initialize(InputAction input)
     {

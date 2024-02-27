@@ -700,7 +700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerToMove: {fileID: 1546101102}
-  sensitivity: 15
+  sensitivity: 20
 --- !u!1 &1176399690
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2044121880289826240
 Transform:
@@ -67,6 +67,10 @@ PrefabInstance:
     - target: {fileID: 146396, guid: 4e139ab05e2721e4fb199a6a352c5632, type: 3}
       propertyPath: m_Name
       value: WorkBlock.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146396, guid: 4e139ab05e2721e4fb199a6a352c5632, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 468722, guid: 4e139ab05e2721e4fb199a6a352c5632, type: 3}
       propertyPath: m_RootOrder
@@ -169,6 +173,10 @@ PrefabInstance:
     - target: {fileID: 1770514590405088, guid: 1cace56ba420dd64c9171c422c8e9aaa, type: 3}
       propertyPath: m_Name
       value: ForestTower_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1770514590405088, guid: 1cace56ba420dd64c9171c422c8e9aaa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4072828905429358, guid: 1cace56ba420dd64c9171c422c8e9aaa, type: 3}
       propertyPath: m_RootOrder
@@ -302,6 +310,10 @@ PrefabInstance:
     - target: {fileID: 1770514590405088, guid: 1cace56ba420dd64c9171c422c8e9aaa, type: 3}
       propertyPath: m_Name
       value: ForestTower_Blue (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1770514590405088, guid: 1cace56ba420dd64c9171c422c8e9aaa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4072828905429358, guid: 1cace56ba420dd64c9171c422c8e9aaa, type: 3}
       propertyPath: m_RootOrder
